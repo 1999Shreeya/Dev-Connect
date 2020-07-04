@@ -53,7 +53,7 @@ router.post(
 
     const {
       company,
-      webiste,
+      website,
       location,
       bio,
       status,
@@ -70,9 +70,9 @@ router.post(
     const profileFields = {};
     profileFields.user = req.user.id;
     if (company) profileFields.company = company;
-    if (webiste) profileFields.webiste = webiste;
+    if (website) profileFields.website = website;
     if (location) profileFields.location = location;
-    if (bio) profileFields.profile = bio;
+    if (bio) profileFields.bio = bio;
     if (status) profileFields.status = status;
     if (githubusername) profileFields.githubusername = githubusername;
     if (skills) {

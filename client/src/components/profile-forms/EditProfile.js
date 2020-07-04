@@ -59,7 +59,8 @@ const EditProfile = ({
       youtube: loading || !profile.youtube ? "" : profile.social.youtube,
       instagram: loading || !profile.social ? "" : profile.social.instagram,
     });
-  }, [loading]);
+    // eslint-disable-next-line
+  }, [loading, getCurrentProfile]);
 
   const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
